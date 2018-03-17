@@ -19,13 +19,14 @@ README.txt - updated on 01/01/2018 - v1.21.22 - latest version can be found here
 
 
 FEATURE SUMMARY:
-
+- Includes miningpooolhubstats.com integration by using -MPHApiKey YOUR_API_KEY_GOES_HERE to your Start-MiningPoolHub.bat command string.
+- Includes up to date miner files including Phoenix Miner v2.7c and Claymore Miner v11.5.
 - Monitors crypto mining pools and coins in real-time and finds the most profitable for your machine
 - Controls any miner that is available via command line
 - Supports benchmarking, multiple platforms (AMD, NVIDIA and CPU) and mining on MiningPoolHub, Zpool, Hash Refinery and Nicehash (Ahashpool support is coming soon)
 - Includes Watchdog Timer to detect and handle miner failures
 
-Any bitcoin donations are greatly appreciated: 1MsrCoAt8qM53HUMsUxvy9gMj3QVbHLazH 
+Any bitcoin donations are greatly appreciated: 17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgzW 
 
 
 ====================================================================

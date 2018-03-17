@@ -52,7 +52,7 @@ README.md is based on README.txt - updated on 01/01/2018 - v1.21.22 - latest ver
 - **Supports benchmarking, multiple platforms (AMD, NVIDIA and CPU) and mining on MiningPoolHub, Zpool, Hash Refinery and Nicehash (Ahashpool support is coming soon)**
 - **Includes Watchdog Timer to detect and handle miner failures**
 
-*Any bitcoin donations are greatly appreciated: 1MsrCoAt8qM53HUMsUxvy9gMj3QVbHLazH*
+*Any bitcoin donations are greatly appreciated: 17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgzW*
 
 
 ====================================================================

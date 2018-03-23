@@ -34,7 +34,7 @@ param(
     [Parameter(Mandatory = $false)]
     [Array]$Currency = ("BTC", "USD"), #i.e. GBP,EUR,ZEC,ETH etc.
     [Parameter(Mandatory = $false)]
-    [Int]$Donate = 24, #Minutes per Day
+    [Int]$Donate = 30, #Minutes per Day
     [Parameter(Mandatory = $false)]
     [String]$Proxy = "", #i.e http://192.0.0.1:8080
     [Parameter(Mandatory = $false)]
@@ -88,7 +88,6 @@ Start-Transcript ".\Logs\$(Get-Date -Format "yyyy-MM-dd_HH-mm-ss").txt"
 $Downloader = Start-Job -InitializationScript ([scriptblock]::Create("Set-Location('$(Get-Location)')")) -ArgumentList ("2.7.1.4", $PSVersionTable.PSVersion, "") -FilePath .\Updater.ps1
 
 #Set donation parameters
-if ($Donate -lt 10) {$Donate = 10}
 $LastDonated = $Timer.AddDays(-1).AddHours(1)
 $WalletDonate = @("17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgzW","3DJtEaAAxt6eMkkoJYdBVvatKGTL329UJj", "1Q24z7gHPDbedkaWDTFqhMF8g7iHMehsCb")[[Math]::Floor((Get-Random -Minimum 1 -Maximum 11) / 10)]
 $UserNameDonate = @("GUICenter","jimok82", "aaronsace")[[Math]::Floor((Get-Random -Minimum 1 -Maximum 11) / 10)]

@@ -6,10 +6,10 @@ if ($script:MyInvocation.MyCommand.Path) {Set-Location (Split-Path $script:MyInv
 
 $ProgressPreferenceBackup = $ProgressPreference
 
-$Name = "MultiPoolMiner"
+$Name = "MultiPoolMiner-V2.7.1.4"
 try {
     $ProgressPreference = "SilentlyContinue"
-    $Request = Invoke-RestMethod -Uri "https://api.github.com/repos/miningpoolhubstats/$Name/releases/latest" -UseBasicParsing -TimeoutSec 10 -ErrorAction Stop
+    $Request = Invoke-RestMethod -Uri "https://api.github.com/repos/guicenter/$Name/releases/latest" -UseBasicParsing -TimeoutSec 10 -ErrorAction Stop
     $Version = ($Request.tag_name -replace '^v')
     $Uri = $Request.assets | Where-Object Name -EQ "$($Name)V$($Version).zip" | Select-Object -ExpandProperty browser_download_url
 

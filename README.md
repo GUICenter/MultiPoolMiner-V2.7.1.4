@@ -1,16 +1,7 @@
-# MultiPoolMiner (With MiningPoolHubStats Support)
-###### created by jimok82 (based on MultiPoolMiner created by aaronsace) 
+# Updated MultiPoolMiner V2.7.1.4 (With MiningPoolHubStats Support)
+###### created by GUICenter (based on MultiPoolMiner created by aaronsace with MiningPoolHubStats created by jimok82) 
 
 ## Important note for those already using MPM who want the reporting feature for https://miningpooolhubstats.com
-
-If you are already running this version of MultiPoolMiner and simply want to swap in the files that do the reporting, you simply need to copy the following files from this release:
-
-* MultiPoolMiner.ps1
-* ReportStatus.ps1
-* Updater.ps1
-
-**IMPORTANT: Make sure to use the files from the same release version as your version of MultiPoolMiner.**
-
 
 Append "-MPHApiKey YOUR_API_KEY_GOES_HERE" to your Start-MiningPoolHub.bat command string.
 

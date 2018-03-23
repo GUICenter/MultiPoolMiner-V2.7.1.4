@@ -2,6 +2,7 @@
 
 param(
     [Parameter(Mandatory=$true)][String]$WorkerName,
+    [Parameter(Mandatory=$true)][String]$Version,
     [Parameter(Mandatory=$true)]$ActiveMiners,
     [Parameter(Mandatory=$true)]$Miners,
     [Parameter(Mandatory=$true)]$MPHApiKey

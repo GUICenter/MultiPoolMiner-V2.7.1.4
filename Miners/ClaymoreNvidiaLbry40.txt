@@ -1,4 +1,4 @@
-[
+[
     {
         "Type":  "NVIDIA",
         "Path":  ".\\Bin\\Ethash-Claymore\\EthDcrMiner64.exe",

@@ -47,6 +47,8 @@ param(
     [String]$MPHApiKey #API Key for MiningPoolHubStats.com
 )
 
+$Version = "2.7.1.4.1"
+
 Set-Location (Split-Path $MyInvocation.MyCommand.Path)
 
 if (Get-Command "Unblock-File" -ErrorAction SilentlyContinue) {Get-ChildItem . -Recurse | Unblock-File}
@@ -85,7 +87,7 @@ $Rates = [PSCustomObject]@{BTC = [Double]1}
 Start-Transcript ".\Logs\$(Get-Date -Format "yyyy-MM-dd_HH-mm-ss").txt"
 
 #Check for software updates
-$Downloader = Start-Job -InitializationScript ([scriptblock]::Create("Set-Location('$(Get-Location)')")) -ArgumentList ("2.7.1.4", $PSVersionTable.PSVersion, "") -FilePath .\Updater.ps1
+$Downloader = Start-Job -InitializationScript ([scriptblock]::Create("Set-Location('$(Get-Location)')")) -ArgumentList ("2.7.1.4.1", $PSVersionTable.PSVersion, "") -FilePath .\Updater.ps1
 
 #Set donation parameters
 $LastDonated = $Timer.AddDays(-1).AddHours(1)

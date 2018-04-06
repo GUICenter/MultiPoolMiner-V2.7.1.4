@@ -30,7 +30,7 @@
         "HashRates":  {"Ethash2gb":  "$($Stats.ClaymoreAmd_Ethash2gb_HashRate.Week)"},
         "API":  "Claymore",
         "Port":  "13333"
-    }
+    },
     {
         "Type":  "AMD",
         "Path":  ".\\Bin\\NeoScrypt-Claymore\\NeoScryptMiner.exe",

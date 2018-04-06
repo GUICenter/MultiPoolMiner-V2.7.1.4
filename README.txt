@@ -13,17 +13,18 @@ LINK: https://multipoolminer.io
 Licensed under the GNU General Public License v3.0
 Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. https://github.com/MultiPoolMiner/MultiPoolMiner/blob/master/LICENSE
 
-README.txt - updated on 01/01/2018 - v1.21.22 - latest version can be found here: https://github.com/MultiPoolMiner/MultiPoolMiner/blob/master/README.txt
+README.txt - updated on 04/05/2018 
+Updated FAQs can be found here: https://github.com/MultiPoolMiner/MultiPoolMiner/blob/master/README.txt
 
 ====================================================================
 
 
 FEATURE SUMMARY:
 - Includes miningpooolhubstats.com integration by using -MPHApiKey YOUR_API_KEY_GOES_HERE to your Start-MiningPoolHub.bat command string.
-- Includes up to date miner files including Phoenix Miner v2.7c and Claymore Miner v11.5.
+- Includes up to date miner files including Phoenix Miner v2.8c and Claymore Miner v11.6.
 - Monitors crypto mining pools and coins in real-time and finds the most profitable for your machine
 - Controls any miner that is available via command line
-- Supports benchmarking, multiple platforms (AMD, NVIDIA and CPU) and mining on MiningPoolHub, Zpool, Hash Refinery and Nicehash (Ahashpool support is coming soon)
+- Supports benchmarking, multiple platforms (AMD, NVIDIA and CPU) and mining on MiningPoolHub, Zpool, Hash Refinery, Nicehash, AHashPool, BlazePool, BlockMasters, YiiMP, and ZergPool 
 - Includes Watchdog Timer to detect and handle miner failures
 
 Any bitcoin donations are greatly appreciated: 17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgzW 
@@ -51,7 +52,8 @@ INSTALLATION:
 IMPORTANT NOTES:
 
 - It is not recommended but to upgrade from a previous version of MultiPoolMiner, you may simply copy the 'Stats' folder.
-- Having PowerShell 6 installed is now a requirement. Windows 64bit: https://github.com/PowerShell/PowerShell/releases/download/v6.0.2/PowerShell-6.0.2-win-x64.msi, ALL OTHER VERSIONS: https://github.com/PowerShell/PowerShell/releases
+- Having PowerShell 6 installed is now a requirement. Windows 64bit: 
+https://github.com/PowerShell/PowerShell/releases/download/v6.1.0-preview.1/PowerShell-6.1.0-preview.1-win-x64.msi, ALL OTHER VERSIONS: https://github.com/PowerShell/PowerShell/releases
 - Microsoft .NET Framework 4.5.1 or later is required for MultiPoolMiner to function properly. Please update from here: https://www.microsoft.com/en-us/download/details.aspx?id=40773
 - CCMiner (NVIDIA cards only) may need 'MSVCR120.dll' if you don't already have it: https://www.microsoft.com/en-gb/download/details.aspx?id=40784
 - CCMiner (NVIDIA cards only) may need 'VCRUNTIME140.DLL' if you don't already have it: https://www.microsoft.com/en-us/download/details.aspx?id=48145
@@ -70,7 +72,7 @@ COMMAND LINE OPTIONS (case-insensitive - except for BTC addresses, see Sample Us
 -region [Europe/US/Asia]
 	Choose your region or the region closest to you.
 
--poolname [miningpoolhub,miningpoolhubcoins,zpool,hashrefinery,nicehash,ahashpool]
+-poolname [miningpoolhub,miningpoolhubcoins,zpool,hashrefinery,nicehash,ahashpool,blazepool,blockmasters,zergpool,yiimp]
 	The following pools are currently supported: 
 	## MiningPoolHub https://miningpoolhub.com/ 
 	        The 'miningpoolhub' parameter uses the 17xxx ports therefore allows the pool to decide on which coin is mined of a specific algorithm, while 'miningpoolhubcoins' allows for MultiPoolMiner to calculate and determine what is mined from all of the available coins (20xxx ports). Usage of the 'miningpoolhub' parameter is recommended as the pool have internal rules against switching before a block is found therefore prevents its users losing shares submitted due to early switching. A registered account is required when mining on MiningPoolHub (username must be provided using the -username command, see below).
@@ -78,7 +80,10 @@ COMMAND LINE OPTIONS (case-insensitive - except for BTC addresses, see Sample Us
 	## Hash Refinery http://pool.hashrefinery.com (Bitcoin address must be provided using the -wallet command, see below)
 	## Nicehash https://www.nicehash.com/ (Bitcoin address must be provided using the -wallet command, see below)
 	## Ahashpool https://www.ahashpool.com/ (Bitcoin address must be provided using the -wallet command, see below)
-	## Upcoming pool support for: BlockMasters (http://blockmasters.co) | ItalYiiMP (http://www.italyiimp.com/)
+	## BlockMasters http://blockmasters.co/ (Bitcoin address must be provided using the -wallet command, see below)
+	## YiiMP http://www.yiimp.eu/ (Bitcoin address must be provided using the -wallet command, see below)
+	## Blazepool http://www.blazepool.com/ (Bitcoin address must be provided using the -wallet command, see below)
+	## Zergpool http://www.zergpool.com/ (Bitcoin address must be provided using the -wallet command, see below)
 	
 	IMPORTANT: The specified pool here will be used as default (preferred) but this does not rule out other pools to be included. Selecting multiple pools is allowed and will be used on a failover basis OR if first specified pool does not support that algorithm/coin. See the -algorithm command below for further details and example.
 	
@@ -161,7 +166,7 @@ set "command=& .\multipoolminer.ps1 -wallet 17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgzW -
 
 pwsh -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
 powershell -version 5.0 -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
-msiexec -i https://github.com/PowerShell/PowerShell/releases/download/v6.0.2/PowerShell-6.0.2-win-x64.msi -qb!
+msiexec -i https://github.com/PowerShell/PowerShell/releases/download/v6.1.0-preview.1/PowerShell-6.1.0-preview.1-win-x64.msi -qb!
 pwsh -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
 
 pause

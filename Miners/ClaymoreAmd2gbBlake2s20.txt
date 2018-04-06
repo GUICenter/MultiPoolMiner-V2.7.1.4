@@ -1,3 +1,4 @@
+[
 {
     "Type":  "AMD",
     "Path":  ".\\Bin\\Ethash-Claymore\\EthDcrMiner64.exe",
@@ -8,3 +9,4 @@
     "API":  "Claymore",
     "Port":  "13333"
 }
+]

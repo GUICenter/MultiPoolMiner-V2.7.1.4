@@ -10,6 +10,7 @@ $Port = 3334
         pool_list       = @([PSCustomObject]@{
                 pool_address    = "$($Pools.CryptoNight.Host):$($Pools.CryptoNight.Port)"
                 wallet_address  = "$($Pools.CryptoNight.User)"
+                rig_id          = ""
                 pool_password   = "$($Pools.CryptoNight.Pass)"
                 use_nicehash    = $true
                 use_tls         = $Pools.CryptoNight.SSL
@@ -17,11 +18,11 @@ $Port = 3334
                 pool_weight     = 1
             }
         )
-        currency        = "monero"
+        currency        = "monero7"
         call_timeout    = 10
         retry_time      = 10
         giveup_limit    = 0
-        verbose_level   = 3
+        verbose_level   = 4
         print_motd      = $true
         h_print_time    = 60
         aes_override    = $null
@@ -40,7 +41,7 @@ $Port = 3334
 [PSCustomObject]@{
     Type      = "CPU"
     Path      = $Path
-    Arguments = "-c $($Pools.CryptoNight.Name)_CryptoNight_$($Pools.CryptoNight.User)_Cpu.txt --noUAC --noAMD --noNVIDIA"
+    Arguments = "-C $($Pools.CryptoNight.Name)_CryptoNight_$($Pools.CryptoNight.User)_Cpu.txt --noUAC --noAMD --noNVIDIA"
     HashRates = [PSCustomObject]@{CryptoNight = $Stats."$($Name)_CryptoNight_HashRate".Week}
     API       = "XMRig"
     Port      = $Port

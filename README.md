@@ -20,7 +20,7 @@ Append "-MPHApiKey YOUR_API_KEY_GOES_HERE" to your Start-MiningPoolHub.bat comma
 
     pwsh -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
     powershell -version 5.0 -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
-    msiexec -i https://github.com/PowerShell/PowerShell/releases/download/v6.0.2/PowerShell-6.0.2-win-x64.msi -qb!
+    msiexec -i https://github.com/PowerShell/PowerShell/releases/download/v6.1.0-preview.1/PowerShell-6.1.0-preview.1-win-x64.msi -qb!
     pwsh -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
 
     pause
@@ -31,7 +31,8 @@ Append "-MPHApiKey YOUR_API_KEY_GOES_HERE" to your Start-MiningPoolHub.bat comma
 
 ###### Licensed under the GNU General Public License v3.0 - Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. https://github.com/MultiPoolMiner/MultiPoolMiner/blob/master/LICENSE
 
-README.md is based on README.txt - updated on 01/01/2018 - v1.21.22 - latest version can be found here: https://github.com/MultiPoolMiner/MultiPoolMiner/blob/master/README.txt
+README.md is based on README.txt - updated on 04/05/2018 
+Updated FAQs can be found here: https://github.com/MultiPoolMiner/MultiPoolMiner/blob/master/README.txt
 
 ====================================================================
 
@@ -68,7 +69,7 @@ README.md is based on README.txt - updated on 01/01/2018 - v1.21.22 - latest ver
 ## IMPORTANT NOTES
 
 - It is not recommended but to upgrade from a previous version of MultiPoolMiner, you may simply copy the 'Stats' folder.
-- Having PowerShell 6 installed is now a requirement. [Windows 64bit](https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-rc.2/PowerShell-6.0.0-rc.2-win-x64.msi), [All other versions](https://github.com/PowerShell/PowerShell/releases)
+- Having PowerShell 6 installed is now a requirement. [Windows 64bit](https://github.com/PowerShell/PowerShell/releases/download/v6.1.0-preview.1/PowerShell-6.1.0-preview.1-win-x64.msi), [All other versions](https://github.com/PowerShell/PowerShell/releases)
 - Microsoft .NET Framework 4.5.1 or later is required for MultiPoolMiner to function properly. [Web Installer](https://www.microsoft.com/en-us/download/details.aspx?id=40773)
 - CCMiner (NVIDIA cards only) may need 'MSVCR120.dll' if you don't already have it: https://www.microsoft.com/en-gb/download/details.aspx?id=40784
 - CCMiner (NVIDIA cards only) may need 'VCRUNTIME140.DLL' if you don't already have it: https://www.microsoft.com/en-us/download/details.aspx?id=48145
@@ -88,7 +89,7 @@ README.md is based on README.txt - updated on 01/01/2018 - v1.21.22 - latest ver
 **-region [Europe/US/Asia]**
 Choose your region or the region closest to you.
 
-**-poolname [miningpoolhub,miningpoolhubcoins,zpool,hashrefinery,nicehash,ahashpool]**
+**-poolname [miningpoolhub,miningpoolhubcoins,zpool,hashrefinery,nicehash,ahashpool,blazepool,blockmasters,zergpool,yiimp]**
 
 The following pools are currently supported:
 - MiningPoolHub https://miningpoolhub.com/ 
@@ -99,7 +100,10 @@ The 'miningpoolhub' parameter uses the 17xxx ports therefore allows the pool to 
 - Hash Refinery http://pool.hashrefinery.com (Bitcoin address must be provided using the -wallet command, see below)
 - Nicehash https://www.nicehash.com/ (Bitcoin address must be provided using the -wallet command, see below)
 - A Hash Pool https://www.ahashpool.com/ (Bitcoin address must be provided using the -wallet command, see below)
-- Upcoming pool support for: [BlockMasters](http://blockmasters.co) | [ItalYiiMP](http://www.italyiimp.com/)
+- BlockMasters http://blockmasters.co/ (Bitcoin address must be provided using the -wallet command, see below)
+- YiiMP http://www.yiimp.eu/ (Bitcoin address must be provided using the -wallet command, see below)
+- Blazepool http://www.blazepool.com/ (Bitcoin address must be provided using the -wallet command, see below)
+- Zergpool http://www.zergpool.com/ (Bitcoin address must be provided using the -wallet command, see below)
 
 ***IMPORTANT**: The specified pool here will be used as default (preferred) but this does not rule out other pools to be included. Selecting multiple pools is allowed and will be used on a failover basis OR if first specified pool does not support that algorithm/coin. See the -algorithm command below for further details and example.*
 
@@ -188,11 +192,11 @@ Set your API key from MiningPoolHub. Will automatically update statistics for wo
     setx GPU_MAX_ALLOC_PERCENT 100
     setx GPU_SINGLE_ALLOC_PERCENT 100
     
-    set "command=& .\multipoolminer.ps1 -wallet 1Q24z7gHPDbedkaWDTFqhMF8g7iHMehsCb -username aaronsace -workername multipoolminer -region europe -currency btc,usd,eur -type amd,nvidia,cpu -poolname miningpoolhub,miningpoolhubcoins,zpool,nicehash -algorithm cryptonight,decred,decrednicehash,ethash,ethash2gb,equihash,groestl,lbry,lyra2re2,lyra2z,neoscrypt,pascal,sia,siaclaymore,sianicehash,sib,skunk -donate 24 -watchdog -switchingprevention 2 -MPHApiKey asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd1234"
+    set "command=& .\multipoolminer.ps1 -wallet 1Q24z7gHPDbedkaWDTFqhMF8g7iHMehsCb -username aaronsace -workername multipoolminer -region europe -currency btc,usd,eur -type amd,nvidia,cpu -poolname miningpoolhub,miningpoolhubcoins,zpool,nicehash -algorithm cryptonight,decred,decrednicehash,ethash,ethash2gb,equihash,groestl,lbry,lyra2re2,lyra2z,neoscrypt,pascal,sib,skunk -donate 24 -watchdog -switchingprevention 2 -MPHApiKey asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd1234"
 
     pwsh -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
     powershell -version 5.0 -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
-    msiexec -i https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-rc.2/PowerShell-6.0.0-rc.2-win-x64.msi -qb!
+    msiexec -i https://github.com/PowerShell/PowerShell/releases/download/v6.1.0-preview.1/PowerShell-6.1.0-preview.1-win-x64.msi -qb!
     pwsh -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
 
     pause

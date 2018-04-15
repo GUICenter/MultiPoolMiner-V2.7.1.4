@@ -1,4 +1,4 @@
-﻿Import-Module "$env:Windir\System32\WindowsPowerShell\v1.0\Modules\NetSecurity\NetSecurity.psd1" -ErrorAction Ignore
+Import-Module "$env:Windir\System32\WindowsPowerShell\v1.0\Modules\NetSecurity\NetSecurity.psd1" -ErrorAction Ignore
 Import-Module "$env:Windir\System32\WindowsPowerShell\v1.0\Modules\Defender\Defender.psd1" -ErrorAction Ignore
 
 Set-Location (Split-Path $MyInvocation.MyCommand.Path)
@@ -373,6 +373,26 @@ function Invoke-TcpRequest {
 
     $Response
 }
+
+function Get-CryptonightAlgorithm { # temp fix for Cryptonight hard fork
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory = $false)]
+        [String]$Coinname = ""
+    )
+
+    Switch ($Coinname) {
+        "Monero"     {$Algorithm = "CryptonightV7"}
+        "Aeon"       {$Algorithm = "CryptonightV7"}
+        "Graft"      {$Algorithm = "CryptonightV7"}
+        "Stellite"   {$Algorithm = "CryptonightV7"}
+        "Sumokoin"   {$Algorithm = "CryptonightHeavy"}
+        "Turtlecoin" {$Algorithm = "CryptonightLite"}
+        default      {$Algorithm = "Cryptonight"}
+    }
+    return $Algorithm
+}
+
 
 function Get-Algorithm {
     [CmdletBinding()]

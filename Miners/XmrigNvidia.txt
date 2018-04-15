@@ -6,7 +6,7 @@
         "HashRates":  {"CryptoNight":  "$(if ($Pools.CryptoNight.SSL) {0}else {$Stats.XmrigNvidia_CryptoNight_HashRate.Week})"},
         "API":  "XMRig",
         "Port":  "3335",
-        "URI":  "https://github.com/xmrig/xmrig-nvidia/releases/download/v2.5.2/xmrig-nvidia-2.5.2-cuda9-win64.zip"
+        "URI":  "https://github.com/xmrig/xmrig-nvidia/releases/download/v2.6.0-beta1/xmrig-nvidia-2.6.0-beta1-cuda9-win64.zip"
     },
     {
         "Type":  "NVIDIA",
@@ -15,7 +15,7 @@
         "HashRates":  {"CryptoNightV7":  "$(if ($Pools.CryptoNightV7.SSL) {0}else {$Stats.XmrigNvidia_CryptoNightV7_HashRate.Week})"},
         "API":  "XMRig",
         "Port":  "3335",
-        "URI":  "https://github.com/xmrig/xmrig-nvidia/releases/download/v2.5.2/xmrig-nvidia-2.5.2-cuda9-win64.zip"
+        "URI":  "https://github.com/xmrig/xmrig-nvidia/releases/download/v2.6.0-beta1/xmrig-nvidia-2.6.0-beta1-cuda9-win64.zip"
     },
     {
         "Type":  "NVIDIA",
@@ -24,7 +24,7 @@
         "HashRates":  {"CryptoNightLite":  "$(if ($Pools.CryptoNightLite.SSL) {0}else {$Stats.XmrigNvidia_CryptoNightLite_HashRate.Week})"},
         "API":  "XMRig",
         "Port":  "3335",
-        "URI":  "https://github.com/xmrig/xmrig-nvidia/releases/download/v2.5.2/xmrig-nvidia-2.5.2-cuda9-win64.zip"
+        "URI":  "https://github.com/xmrig/xmrig-nvidia/releases/download/v2.6.0-beta1/xmrig-nvidia-2.6.0-beta1-cuda9-win64.zip"
     },
     {
         "Type":  "NVIDIA",
@@ -33,6 +33,6 @@
         "HashRates":  {"CryptoNightHeavy":  "$(if ($Pools.CryptoNightHeavy.SSL) {0}else {$Stats.XmrigNvidia_CryptoNightHeavy_HashRate.Week})"},
         "API":  "XMRig",
         "Port":  "3335",
-        "URI":  "https://github.com/xmrig/xmrig-nvidia/releases/download/v2.5.2/xmrig-nvidia-2.5.2-cuda9-win64.zip"
+        "URI":  "https://github.com/xmrig/xmrig-nvidia/releases/download/v2.6.0-beta1/xmrig-nvidia-2.6.0-beta1-cuda9-win64.zip"
     }
 ]

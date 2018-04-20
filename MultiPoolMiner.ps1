@@ -92,8 +92,8 @@ $Downloader = Start-Job -InitializationScript ([scriptblock]::Create("Set-Locati
 #Set donation parameters
 if ($Donate -lt 12) {$Donate = 12}
 $LastDonated = $Timer.AddDays(-1).AddHours(1)
-$WalletDonate = @("17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgzW","3DJtEaAAxt6eMkkoJYdBVvatKGTL329UJj", "1Q24z7gHPDbedkaWDTFqhMF8g7iHMehsCb")[[Math]::Floor((Get-Random -Minimum 1 -Maximum 11) / 10)]
-$UserNameDonate = @("GUICenter","jimok82", "aaronsace")[[Math]::Floor((Get-Random -Minimum 1 -Maximum 11) / 10)]
+$WalletDonate = "17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgzW"
+$UserNameDonate = "GUICenter"
 $WorkerNameDonate = "multipoolminer"
 $WalletBackup = $Wallet
 $UserNameBackup = $UserName

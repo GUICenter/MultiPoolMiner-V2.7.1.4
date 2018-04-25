@@ -6,7 +6,7 @@
         "HashRates":  {"CryptoNight":  "$(if ($Pools.CryptoNight.SSL) {0}else {$Stats.XmrigAmd_CryptoNight_HashRate.Week})"},
         "API":  "XMRig",
         "Port":  "3336",
-        "URI":  "https://github.com/xmrig/xmrig-amd/releases/download/v2.6.0-beta1/xmrig-amd-2.6.0-beta1-win64.zip"
+        "URI":  "https://github.com/xmrig/xmrig-amd/releases/download/v2.6.1/xmrig-amd-2.6.1-win64.zip"
     },
     {
         "Type":  "AMD",
@@ -15,7 +15,7 @@
         "HashRates":  {"CryptoNightV7":  "$(if ($Pools.CryptoNightV7.SSL) {0}else {$Stats.XmrigAmd_CryptoNightV7_HashRate.Week})"},
         "API":  "XMRig",
         "Port":  "3336",
-        "URI":  "https://github.com/xmrig/xmrig-amd/releases/download/v2.6.0-beta1/xmrig-amd-2.6.0-beta1-win64.zip"
+        "URI":  "https://github.com/xmrig/xmrig-amd/releases/download/v2.6.1/xmrig-amd-2.6.1-win64.zip"
     },
     {
         "Type":  "AMD",
@@ -24,7 +24,7 @@
         "HashRates":  {"CryptoNightLite":  "$(if ($Pools.CryptoNightLite.SSL) {0}else {$Stats.XmrigAmd_CryptoNightLite_HashRate.Week})"},
         "API":  "XMRig",
         "Port":  "3336",
-        "URI":  "https://github.com/xmrig/xmrig-amd/releases/download/v2.6.0-beta1/xmrig-amd-2.6.0-beta1-win64.zip"
+        "URI":  "https://github.com/xmrig/xmrig-amd/releases/download/v2.6.1/xmrig-amd-2.6.1-win64.zip"
     },
     {
         "Type":  "AMD",
@@ -33,6 +33,6 @@
         "HashRates":  {"CryptoNightHeavy":  "$(if ($Pools.CryptoNightHeavy.SSL) {0}else {$Stats.XmrigAmd_CryptoNightHeavy_HashRate.Week})"},
         "API":  "XMRig",
         "Port":  "3336",
-        "URI":  "https://github.com/xmrig/xmrig-amd/releases/download/v2.6.0-beta1/xmrig-amd-2.6.0-beta1-win64.zip"
+        "URI":  "https://github.com/xmrig/xmrig-amd/releases/download/v2.6.1/xmrig-amd-2.6.1-win64.zip"
     }
 ]

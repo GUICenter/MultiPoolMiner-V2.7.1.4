@@ -27,8 +27,9 @@ FEATURE SUMMARY:
 - Supports benchmarking, multiple platforms (AMD, NVIDIA and CPU) and mining on MiningPoolHub, Zpool, Hash Refinery, Nicehash, AHashPool, BlazePool, BlockMasters, YiiMP, and ZergPool 
 - Includes Watchdog Timer to detect and handle miner failures
 
-Any bitcoin donations are greatly appreciated: 17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgzW 
-
+Any donations are greatly appreciated: 
+BTC: 17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgzW 
+ETH: 0x0351179D69Bc968b9920C13B16645B554b225275
 
 ====================================================================
 

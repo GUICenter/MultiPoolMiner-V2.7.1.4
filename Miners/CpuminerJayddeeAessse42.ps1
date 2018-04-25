@@ -1,7 +1,7 @@
 ﻿using module ..\Include.psm1
 
 $Path = ".\Bin\CPU-JayDDee\cpuminer-aes-sse42.exe"
-$Uri = "https://github.com/JayDDee/cpuminer-opt/files/1865696/cpuminer-opt-3.8.6-windows.zip"
+$Uri = "https://github.com/JayDDee/cpuminer-opt/files/1939225/cpuminer-opt-3.8.8-windows.zip"
 
 $Commands = [PSCustomObject]@{
     #"bitcore" = "" #Bitcore
@@ -10,6 +10,8 @@ $Commands = [PSCustomObject]@{
     #"vanilla" = "" #BlakeVanilla
     #"c11" = "" #C11
     "cryptonight" = "" #CryptoNight
+    "cryptonightv7" = "" #CryptoNightV7
+    "cryptolight" = "" #CryptoNightLite
     #"decred" = "" #Decred
     #"equihash" = "" #Equihash
     #"ethash" = "" #Ethash

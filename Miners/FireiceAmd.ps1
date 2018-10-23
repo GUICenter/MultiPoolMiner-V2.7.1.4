@@ -1,7 +1,7 @@
 using module ..\Include.psm1
 
 $Path = ".\Bin\CryptoNight-FireIce\xmr-stak.exe"
-$Uri = "https://github.com/fireice-uk/xmr-stak/releases/download/2.4.3/xmr-stak-win64.zip"
+$Uri = "https://github.com/fireice-uk/xmr-stak/releases/download/2.5.1/xmr-stak-win64-2.5.1.zip"
 
 $Name = Get-Item $MyInvocation.MyCommand.Path | Select-Object -ExpandProperty BaseName
 $Port = 3336
@@ -9,7 +9,7 @@ $Port = 3336
 $Commands = [PSCustomObject]@{
     "cryptonight" = "" #CryptoNight
     "cryptonight_lite" = "" # CryptoNight-Lite
-    "cryptonightV7" = "" #CryptoNightV7
+    "cryptonight-monero" = "" #CryptoNight-Monero
 }
 
 $Commands | Get-Member -MemberType NoteProperty | Select-Object -ExpandProperty Name | Where-Object {$Pools.$(Get-Algorithm $_)} | ForEach-Object {
@@ -28,7 +28,7 @@ $Commands | Get-Member -MemberType NoteProperty | Select-Object -ExpandProperty 
                     rig_id = ""
                 }
             )
-            currency        = if ($Pools.$Algorithm_Norm.Info) {"$($Pools.$Algorithm_Norm.Info -replace '^monero$', 'monero7')"} else {"$_"}
+            currency        = if ($Pools.$Algorithm_Norm.Info) {"$($Pools.$Algorithm_Norm.Info -replace '^monero$', 'monero')"} else {"$_"}
             call_timeout    = 10
             retry_time      = 10
             giveup_limit    = 0

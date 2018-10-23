@@ -6,25 +6,25 @@
         "HashRates":  {"CryptoNight":  "$(if ($Pools.CryptoNight.SSL) {0}else {$Stats.Cast_CryptoNight_HashRate.Week})"},
         "API":  "Cast",
         "Port":  "7777",
-        "URI":  "http://www.gandalph3000.com/download/cast_xmr-vega-win64_100.zip"
+        "URI":  "http://www.gandalph3000.com/download/cast_xmr-vega-win64_150.zip"
     },
     {
         "Type":  "AMD",
         "Path":  ".\\Bin\\CryptoNight-Cast\\cast_xmr-vega.exe",
-        "Arguments":  "--remoteaccess -S $($Pools.CryptoNightV7.Host):$($Pools.CryptoNightV7.Port) -u $($Pools.CryptoNightV7.User) -p $($Pools.CryptoNightV7.Pass) --nicehash --algo=1 --opencl $([array]::IndexOf(([OpenCl.Platform]::GetPlatformIDs() | Select-Object -ExpandProperty Vendor), 'Advanced Micro Devices, Inc.'))",
-        "HashRates":  {"CryptoNightV7":  "$(if ($Pools.CryptoNightV7.SSL) {0}else {$Stats.Cast_CryptoNightV7_HashRate.Week})"},
+        "Arguments":  "--remoteaccess -S $($Pools.CryptoNightV8.Host):$($Pools.CryptoNightV8.Port) -u $($Pools.CryptoNightV8.User) -p $($Pools.CryptoNightV8.Pass) --nicehash --algo=10 --opencl $([array]::IndexOf(([OpenCl.Platform]::GetPlatformIDs() | Select-Object -ExpandProperty Vendor), 'Advanced Micro Devices, Inc.'))",
+        "HashRates":  {"CryptoNightV8":  "$(if ($Pools.CryptoNightV8.SSL) {0}else {$Stats.Cast_CryptoNightV8_HashRate.Week})"},
         "API":  "Cast",
         "Port":  "7777",
-        "URI":  "http://www.gandalph3000.com/download/cast_xmr-vega-win64_100.zip"
+        "URI":  "http://www.gandalph3000.com/download/cast_xmr-vega-win64_150.zip"
     },
     {
         "Type":  "AMD",
         "Path":  ".\\Bin\\CryptoNight-Cast\\cast_xmr-vega.exe",
-        "Arguments":  "--remoteaccess -S $($Pools.CryptoNightLite.Host):$($Pools.CryptoNightLite.Port) -u $($Pools.CryptoNightLite.User) -p $($Pools.CryptoNightLite.Pass) --nicehash --opencl $([array]::IndexOf(([OpenCl.Platform]::GetPlatformIDs() | Select-Object -ExpandProperty Vendor), 'Advanced Micro Devices, Inc.'))",
+        "Arguments":  "--remoteaccess -S $($Pools.CryptoNightLite.Host):$($Pools.CryptoNightLite.Port) -u $($Pools.CryptoNightLite.User) -p $($Pools.CryptoNightLite.Pass) --nicehash --algo=3 --opencl $([array]::IndexOf(([OpenCl.Platform]::GetPlatformIDs() | Select-Object -ExpandProperty Vendor), 'Advanced Micro Devices, Inc.'))",
         "HashRates":  {"CryptoNightLite":  "$(if ($Pools.CryptoNightLite.SSL) {0}else {$Stats.Cast_CryptoNightLite_HashRate.Week})"},
         "API":  "Cast",
         "Port":  "7777",
-        "URI":  "http://www.gandalph3000.com/download/cast_xmr-vega-win64_100.zip"
+        "URI":  "http://www.gandalph3000.com/download/cast_xmr-vega-win64_150.zip"
     },
     {
         "Type":  "AMD",
@@ -33,6 +33,6 @@
         "HashRates":  {"CryptoNightHeavy":  "$(if ($Pools.CryptoNightHeavy.SSL) {0}else {$Stats.Cast_CryptoNightHeavy_HashRate.Week})"},
         "API":  "Cast",
         "Port":  "7777",
-        "URI":  "http://www.gandalph3000.com/download/cast_xmr-vega-win64_100.zip"
+        "URI":  "http://www.gandalph3000.com/download/cast_xmr-vega-win64_150.zip"
     }
 ]

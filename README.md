@@ -20,7 +20,7 @@ Append "-MPHApiKey YOUR_API_KEY_GOES_HERE" to your Start-MiningPoolHub.bat comma
 
     pwsh -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
     powershell -version 5.0 -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
-    msiexec -i https://github.com/PowerShell/PowerShell/releases/download/v6.1.0-preview.1/PowerShell-6.1.0-preview.1-win-x64.msi -qb!
+    msiexec -i https://github.com/PowerShell/PowerShell/releases/download/v6.0.4/PowerShell-6.0.4-win-x64.msi -qb!
     pwsh -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
 
     pause
@@ -198,7 +198,7 @@ Set your API key from MiningPoolHub. Will automatically update statistics for wo
 
     pwsh -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
     powershell -version 5.0 -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
-    msiexec -i https://github.com/PowerShell/PowerShell/releases/download/v6.1.0-preview.1/PowerShell-6.1.0-preview.1-win-x64.msi -qb!
+    msiexec -i https://github.com/PowerShell/PowerShell/releases/download/v6.0.4/PowerShell-6.0.4-win-x64.msi -qb!
     pwsh -noexit -executionpolicy bypass -windowstyle maximized -command "%command%"
 
     pause

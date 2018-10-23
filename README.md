@@ -133,7 +133,7 @@ Supported algorithms sorted by pool can be found at https://multipoolminer.io/al
 
 The following algorithms are currently supported: 
 
-    Bitcore, Blakecoin, Blake2s, BlakeVanilla, C11, CryptoNight, Ethash, X11, Decred, Equihash, Groestl, HMQ1725, JHA, Keccak, Lbry, Lyra2RE2, Lyra2z, MyriadGroestl, NeoScrypt, Nist5, Pascal, Polytimos, Quark, Qubit, Scrypt, SHA256, Sia, Sib, Skunk, Skein, Timetravel, Tribus, BlakeVanilla, Veltor, X11, X11evo, X17, Yescrypt
+    Bitcore, Blakecoin, Blake2s, BlakeVanilla, C11, CryptoNight, CryptoNightV8, Ethash, X11, Decred, Equihash, Groestl, HMQ1725, JHA, Keccak, Lbry, Lyra2RE2, Lyra2z, MyriadGroestl, NeoScrypt, Nist5, Pascal, Polytimos, Quark, Qubit, Scrypt, SHA256, Sia, Sib, Skunk, Skein, Timetravel, Tribus, BlakeVanilla, Veltor, X11, X11evo, X17, Yescrypt
 
 #### Special parameters: 
 - **ethash2gb** - can be profitable for older GPUs that have 2GB or less GDDR memory. It includes ethash coins that have a DAG file size of less than 2GB (and will be mined when most profitable). Ethereum and a few other coins have surpassed this size therefore cannot be mined with older cards.

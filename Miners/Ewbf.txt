@@ -8,5 +8,15 @@
         "Port":  "42000",
         "PrerequisitePath":  "$env:SystemRoot\\System32\\msvcr120.dll",
         "PrerequisiteURI":  "http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe"
+    },
+	{
+        "Type":  "NVIDIA",
+        "Path":  ".\\Bin\\Equihash-EWBF-BTG\\miner.exe",
+        "Arguments":  "--eexit 1 --api --server $($Pools.EquihashBTG.Host) --port $($Pools.EquihashBTG.Port) --user $($Pools.EquihashBTG.User) --pass $($Pools.EquihashBTG.Pass) --fee 0 --intensity 64 --algo 144_5 --pers BgoldPoW",
+        "HashRates":  {"EquihashBTG":  "$(if ($Pools.EquihashBTG.SSL) {0}else {$Stats.Ewbf_EquihashBTG_HashRate.Week})"},
+        "API":  "DSTM",
+        "Port":  "42000",
+        "PrerequisitePath":  "$env:SystemRoot\\System32\\msvcr120.dll",
+        "PrerequisiteURI":  "http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe"
     }
 ]

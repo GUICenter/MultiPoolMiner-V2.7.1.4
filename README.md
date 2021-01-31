@@ -46,7 +46,7 @@ Updated FAQs can be found here: https://github.com/MultiPoolMiner/MultiPoolMiner
 
 *Any donations are greatly appreciated:*
 BTC: 17mcbEXB1v2zaUS4rjM3vjpB5GZSZZtgzW
-ETH: 0x0351179D69Bc968b9920C13B16645B554b225275
+ETH: 0x631B833f3D84f1db77853983403C151E3EB8eB82
 
 
 ====================================================================
